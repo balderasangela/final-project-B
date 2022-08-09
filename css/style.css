@@ -7,13 +7,13 @@ body{
 
 /* header */
 .container-fluid{
-    background-color:#EF6461;
+    background-color: #EF6461;
     background-size: cover;
-    height:100px;
+    height:90px;
 }
  .header h1{
     font-size: 40px;
-    margin-top:-40px;
+    margin-top:-20px;
     padding:3px;
     font-weight: bold;
  }
@@ -23,19 +23,21 @@ h3 {
    margin-left:8px;
 }
 .search{
-    margin-top: -5px;
+    margin-top: 0px;
     margin-left:25px;
     border-width: 1px;
+   
 }
 /* card task list */
 .card-header{
     background-color: #edae49;
+    margin:10px;
 }
 
 
  /* Modal */
  .modal-content{
-    background-color: #80a8e0;
+    background-color: #EF6461;
     margin-right: 50px;
  }
 
@@ -55,4 +57,9 @@ h3 {
 /* card catagory starts here */
 .card{
     margin-top:20px;
+    border: none;
+}
+
+.task1-container {
+    justify-content: center;
 }

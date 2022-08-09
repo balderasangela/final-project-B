@@ -29,7 +29,7 @@
 
                 </h3>
 
-                <div class="row">
+                
                 <h1 class="bold ">
                   August 5
                 </h1>
@@ -43,9 +43,9 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2">
+      <div class="col-3">
         <form action="/url" method="GET">
-          <input class="form-control" type="text" placeholder="Search your task!">
+          <input class="form-control text-center" type="text"  placeholder="Search your task!">
       </form>
       </div>
     </div>
@@ -60,7 +60,7 @@
               <p class="card-header">
                   Notes:
               </p>
-              <label for="Textarea1">Notes:</label>
+              
               <textarea class="form-control" id="Textarea1"></textarea>
           </div>
       </div>
@@ -84,18 +84,15 @@
                 
                     <div class="card">
                         <div class="card-body">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Work on resume </label>
-                              </div>
+                           
                             <!-- get updates / modal trigger -->
       <section class="bg-light">
         <div class="container">
           
-          <div class="row justify-content-center">
+          <div class="row no-gutters">
             <div class="col-md-8 text-center">
               
-              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reg-modal">
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">
                 Add new task
               </button>
             </div>
@@ -105,83 +102,111 @@
       </div>
   </div>
 </div>
+          </div>
+</div>
+  </div>
+</div>
           
 
 <!--Progress/ Completed-->
 <div class="cards container ">
   <div class="row">
-  <div class="col-12 col-sm-6">
-    <h2>
-      Progress Check
-    </h2>
-    <p> 
+    <div class="col-6">
+      <h2>
+        Progress Check
+      </h2>
+  
+  
       <!-- sample task of five -->
-        <h1 class="bold">My Tasks</h1>
-        <div id="list-items">
-            <div class="card" style="width: 18rem;">                
-                <div class="card-body">
-                    <h5 class="card-title">Homework</h5>
-                    <p class="card-text">Anatomy homework due for Mr.Johnson class</p>
-                    <p class="card-text"></p>
-                    <p class="card-text">Due Date: August 11,2022</p>
-                    <span class="badge badge-success">IN PROGRESS</span>
-                    <a href="#" class="btn btn-danger">Delete</a>
-                </div>
-            </div>
-
-            <div id="list-items">
-              <div class="card" style="width: 18rem;">                
-                  <div class="card-body">
-                      <h5 class="card-title">Meditate</h5>
-                      <p class="card-text">Meditate for an hour</p>
-                      <p class="card-text"></p>
-                      <p class="card-text">Due Date: August 9,2022</p>
-                      <span class="badge badge-succeed">IN PROGRESS</span>
-                      <a href="#" class="btn btn-danger">Delete</a>
-                  </div>
-              </div>
-              <div id="list-items">
-                <div class="card" style="width: 18rem;">                
-                    <div class="card-body">
-                        <h5 class="card-title">Grocery</h5>
-                        <p class="card-text"> Buy groceries - 1:00 pm</p>
-                        <p class="card-text"></p>
-                        <p class="card-text">Due Date: Aug 9 - 2020</p>
-                        <span class="badge badge-succeed">IN PROGRESS</span>
-                        <a href="#" class="btn btn-danger">Delete</a>
-                    </div>
-                </div>
-    </p>
-  </div>
-  <div class="column">
-    <h2>
-      Completed
-    </h2>
-    <div id="list-items">
-      <div class="card" style="width: 18rem;">                
+      <div class="task1 container"></div>
+      <div id="list-items">
+        <div class="card" style="width: 18rem;">
           <div class="card-body">
+            <h5 class="card-title">Homework</h5>
+            <p class="card-text">Anatomy homework due for Mr.Johnson class</p>
+            <p class="card-text"></p>
+            <p class="card-text">Due Date: August 11,2022</p>
+            <span class="badge badge-warning">IN PROGRESS</span>
+            <a href="#" class="btn btn-danger">Delete</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="task1 container">
+        <div id="list-items">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Meditate</h5>
+              <p class="card-text">Meditate for an hour</p>
+              <p class="card-text"></p>
+              <p class="card-text">Due Date: August 9,2022</p>
+              <span class="badge badge-warning">IN PROGRESS</span>
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="task1 container">
+          <div id="list-items">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Grocery</h5>
+                <p class="card-text"> Buy groceries - 1:00 pm</p>
+                <p class="card-text"></p>
+                <p class="card-text">Due Date: Aug 9 - 2020</p>
+                <span class="badge badge-warning">IN PROGRESS</span>
+                <a href="#" class="btn btn-danger">Delete</a>
+              </div>
+            </div>
+          </div>
+  
+          </p>
+        </div>
+        
+      </div>
+
+
+    </div>
+    <div class="col-6 ">
+      <h2>
+        Completed
+      </h2>
+  
+      <div class="task1 container">
+        <div id="list-items">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
               <h5 class="card-title">Walk the dog</h5>
               <p class="card-text">Walk the dog around the block for an hour</p>
               <p class="card-text"></p>
               <p class="card-text">Due Date: August 9,2022</p>
-              <span class="badge badge-succeed">Completed</span>
+              <span class="badge badge-success">Completed</span>
               <a href="#" class="btn btn-danger">Delete</a>
+            </div>
           </div>
-      </div>
-      <div id="list-items">
-        <div class="card" style="width: 18rem;">                
-            <div class="card-body">
+        </div>
+  
+        <div class="task1 container">
+          <div id="list-items">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
                 <h5 class="card-title">Clean house</h5>
                 <p class="card-text">Sweep the house, organize the room, clean bathroom</p>
                 <p class="card-text"></p>
                 <p class="card-text">Due Date: Aug 6, 2022</p>
-                <span class="badge badge-succeed">Completed</span>
+                <span class="badge badge-success">Completed</span>
                 <a href="#" class="btn btn-danger">Delete</a>
+              </div>
             </div>
+          </div>
         </div>
-    </p>
+      </div>
+    </div>
   </div>
-  </div>
+
+  
+
+</div>
 
    
 
@@ -210,8 +235,8 @@
                     </div>
 
                     <div class="form-group">
-                        <p>Repeat:</p>
-                        <select class="form-control form-control-sm">
+                      <label for="new-taskRepeat">Repeat:</label>
+                        <select class="form-control form-control-sm" id="new-taskRepeat">
                             <option>Once</option>
                             <option>daily</option>
                             <option>weekly</option>
@@ -219,8 +244,8 @@
                     </div>
 
                     <div class="form-group">
-                      <p>Status</p>
-                      <select class="form-control form-control-sm">
+                      <label for="new-taskStatus">Status:</label>
+                      <select class="form-control form-control-sm" id="new-taskStatus">
                           <option>Active</option>
                           <option>working on</option>
                           <option>completed</option>
@@ -238,12 +263,14 @@
                             <input type="date" class="form-control" id="new-taskDueDate">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+                    <button type="submit" class="btn btn-warning btn-block">Add Task</button>
                 </form>
             </div>
         </div>
         </div>
-      
+      </div>
+    </div>
+  </div>
         <!-- modal ends here -->
 
      
