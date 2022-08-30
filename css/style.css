@@ -22,6 +22,12 @@ h3 {
     font-size: 20px;
    margin-left:8px;
 }
+
+h2{
+    margin-left: 50px;
+}
+
+
 .search{
     margin-top: 0px;
     margin-left:25px;
@@ -38,12 +44,12 @@ h3 {
  /* Modal */
  .modal-content{
     background-color: #EF6461;
-    margin-right: 50px;
+    align-items: center;
  }
 
  .form-group{
     color: #000000;
-    
+    align-content: space-between;
  }
 
  .form-group1{
@@ -58,6 +64,7 @@ h3 {
 .card{
     margin-top:20px;
     border: none;
+    text-align: center;
 }
 
 .task1-container {

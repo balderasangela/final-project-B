@@ -1,286 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Planner</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Planner</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-<!-- link to text-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <!-- link to text-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <!-- js links -->
 
 
 <body>
-    
-    <!-- header -->
-    <div class="container-fluid">
-        <div class="header row ">
-            <div class="col-12">
-                <h3>
-                    Friday<br><br>
 
-                </h3>
+  <!-- header -->
+  <div class="container-fluid">
+    <div class="header row ">
+      <div class="col-12">
+        <h3>
+          Friday<br><br>
 
-                
-                <h1 class="bold ">
-                  August 5
-                </h1>
+        </h3>
 
-                <!--Search Bar for tasks-->
-                <div class="search">
-                
-            </div>
+
+        <h1 class="bold ">
+          August 5
+        </h1>
+
+        <!--Search Bar for tasks-->
+        <div class="search">
+
         </div>
+      </div>
     </div>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-3">
         <form action="/url" method="GET">
-          <input class="form-control text-center" type="text"  placeholder="Search your task!">
-      </form>
+          <input class="form-control text-center" type="text" placeholder="Search your task!">
+        </form>
       </div>
     </div>
   </div>
 
-<!--Main notes-->
-<div class="cards container ">
-  <div class="row">
-    
+  <!--Main notes-->
+  <div class="cards container ">
+    <div class="row">
+
       <div class="col-12 col-sm-6">
-          <div class="card">
-              <p class="card-header">
-                  Notes:
-              </p>
-              
-              <textarea class="form-control" id="Textarea1"></textarea>
-          </div>
-      </div>
-
-     
- <!-- catagory card-->
-<div class="col-12 col-sm-6">
-  <div class="card">
-      <h3 class="card-header">
-        <label class="mr-sm-2" for="inlineFormCustomSelect">Catagories</label>
-        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-          <option selected>Choose...</option>
-          <option value="1">Work</option>
-          <option value="2">School</option>
-          <option value="3">Personal</option>
-        </select>
-      </h3>
-      <div class="card-body">
-          <div class="cards container ">
-            <div class="row-card">
-                
-                    <div class="card">
-                        <div class="card-body">
-                           
-                            <!-- get updates / modal trigger -->
-      <section class="bg-light">
-        <div class="container">
-          
-          <div class="row no-gutters">
-            <div class="col-md-8 text-center">
-              
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                Add new task
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-  </div>
-</div>
-          </div>
-</div>
-  </div>
-</div>
-          
-
-<!--Progress/ Completed-->
-<div class="cards container ">
-  <div class="row">
-    <div class="col-6">
-      <h2>
-        Progress Check
-      </h2>
-  
-  
-      <!-- sample task of five -->
-      <div class="task1 container"></div>
-      <div id="list-items">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Homework</h5>
-            <p class="card-text">Anatomy homework due for Mr.Johnson class</p>
-            <p class="card-text"></p>
-            <p class="card-text">Due Date: August 11,2022</p>
-            <span class="badge badge-warning">IN PROGRESS</span>
-            <a href="#" class="btn btn-danger">Delete</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="task1 container">
-        <div id="list-items">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Meditate</h5>
-              <p class="card-text">Meditate for an hour</p>
-              <p class="card-text"></p>
-              <p class="card-text">Due Date: August 9,2022</p>
-              <span class="badge badge-warning">IN PROGRESS</span>
-              <a href="#" class="btn btn-danger">Delete</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="task1 container">
-          <div id="list-items">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Grocery</h5>
-                <p class="card-text"> Buy groceries - 1:00 pm</p>
-                <p class="card-text"></p>
-                <p class="card-text">Due Date: Aug 9 - 2020</p>
-                <span class="badge badge-warning">IN PROGRESS</span>
-                <a href="#" class="btn btn-danger">Delete</a>
-              </div>
-            </div>
-          </div>
-  
+        <div class="card">
+          <p class="card-header">
+            Notes:
           </p>
+
+          <textarea class="form-control" id="Textarea1"></textarea>
         </div>
-        
       </div>
 
 
-    </div>
-    <div class="col-6 ">
-      <h2>
-        Completed
-      </h2>
-  
-      <div class="task1 container">
-        <div id="list-items">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Walk the dog</h5>
-              <p class="card-text">Walk the dog around the block for an hour</p>
-              <p class="card-text"></p>
-              <p class="card-text">Due Date: August 9,2022</p>
-              <span class="badge badge-success">Completed</span>
-              <a href="#" class="btn btn-danger">Delete</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="task1 container">
-          <div id="list-items">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Clean house</h5>
-                <p class="card-text">Sweep the house, organize the room, clean bathroom</p>
-                <p class="card-text"></p>
-                <p class="card-text">Due Date: Aug 6, 2022</p>
-                <span class="badge badge-success">Completed</span>
-                <a href="#" class="btn btn-danger">Delete</a>
+      <!-- catagory card-->
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <h3 class="card-header">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Catagories</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">Work</option>
+              <option value="2">School</option>
+              <option value="3">Personal</option>
+            </select>
+          </h3>
+          <div class="card-body">
+            <div class="cards container ">
+              <div class="row-card">
+
+                <div class="card">
+                  <div class="card-body">
+
+                    <!-- get updates / modal trigger -->
+                    <section class="bg-light">
+                      <div class="container">
+
+                        <div class="row no-gutters">
+                          <div class="col-md-8 text-center">
+
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                              Add new task
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  
 
-</div>
+      <!--Progress/ Completed-->
+      <div class="cards container ">
+        <div class="row">
+          <div class="col-6">
+            <h2>
+              Progress 
+            </h2>
 
-   
 
-  <!-- Inside the modal -->
-  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    
-    <div class="modal-dialog">
-      <div class="modal-content ">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-title">Add New Task</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- sample task of five -->
+            <div class="task1 container"></div>
+            <div id="list-items">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Homework</h5>
+                  <p class="card-text">Anatomy homework due for Mr.Johnson class</p>
+                  <p class="card-text"></p>
+                  <p class="card-text">Due Date: August 11,2022</p>
+                  <span class="badge badge-warning">IN PROGRESS</span>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="task1 container">
+              <div id="list-items">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Meditate</h5>
+                    <p class="card-text">Meditate for an hour</p>
+                    <p class="card-text"></p>
+                    <p class="card-text">Due Date: August 9,2022</p>
+                    <span class="badge badge-warning">IN PROGRESS</span>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task1 container">
+                <div id="list-items">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Grocery</h5>
+                      <p class="card-text"> Buy groceries - 1:00 pm</p>
+                      <p class="card-text"></p>
+                      <p class="card-text">Due Date: Aug 9 - 2020</p>
+                      <span class="badge badge-warning">IN PROGRESS</span>
+                      <a href="#" class="btn btn-danger">Delete</a>
+                    </div>
+                  </div>
+                </div>
+
+                </p>
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class="col-6 ">
+            <h2>
+              Completed
+            </h2>
+
+            <div class="task1 container">
+              <div id="list-items">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Walk the dog</h5>
+                    <p class="card-text">Walk the dog around the block for an hour</p>
+                    <p class="card-text"></p>
+                    <p class="card-text">Due Date: August 9,2022</p>
+                    <span class="badge badge-success">Completed</span>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="task1 container">
+                <div id="list-items">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Clean house</h5>
+                      <p class="card-text">Sweep the house, organize the room, clean bathroom</p>
+                      <p class="card-text"></p>
+                      <p class="card-text">Due Date: Aug 6, 2022</p>
+                      <span class="badge badge-success">Completed</span>
+                      <a href="#" class="btn btn-danger">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>Please fill out the form below to add a new task</p><br>
 
-        <div class="row mb-5">
-            <div class="modal-col">
-                <form id="new-task">
+
+
+      </div>
+
+
+
+      <!-- Inside the modal -->
+      <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+
+        <div class="modal-dialog">
+          <div class="modal-content ">
+            <div class="modal-header ">
+              <h5 class="modal-title" id="modal-title">Add New Task</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Please fill out the form below to add a new task</p><br>
+
+              <div class="row mb-6">
+                <div class="modal-col">
+                  <form id="new-task">
                     <div class="form-group">
-                        <label for="new-taskInput">Name</label>
-                        <input type="text" class="form-control" id="new-taskInput">
+                      <label for="new-taskInput">Name</label>
+                      <input type="text" class="form-control" id="new-taskInput">
                     </div>
                     <div class="form-group">
-                        <label for="new-taskDescription">Description</label>
-                        <textarea type="text" class="form-control" id="new-taskDescription"></textarea>
+                      <label for="new-taskDescription">Notes</label>
+                      <textarea type="text" class="form-control" id="new-taskDescription"></textarea>
                     </div>
 
                     <div class="form-group">
                       <label for="new-taskRepeat">Repeat:</label>
-                        <select class="form-control form-control-sm" id="new-taskRepeat">
-                            <option>Once</option>
-                            <option>daily</option>
-                            <option>weekly</option>
-                          </select>
+                      <select class="form-control form-control-sm" id="new-taskRepeat">
+                        <option>Once</option>
+                        <option>daily</option>
+                        <option>weekly</option>
+                      </select>
                     </div>
 
                     <div class="form-group">
                       <label for="new-taskStatus">Status:</label>
                       <select class="form-control form-control-sm" id="new-taskStatus">
-                          <option>Active</option>
-                          <option>working on</option>
-                          <option>completed</option>
-                        </select>
-                  </div>
+                        <option>Active</option>
+                        <option>working on</option>
+                        <option>completed</option>
+                      </select>
+                    </div>
 
                     <div class="form-row">
-                        <div class="form-group col">
-                            <label for="new-taskAssignedTo">Assigned To</label>
-                            <input type="email" class="form-control" id="new-taskAssignedToEmail">
-                        </div>
+                      <div class="form-group col">
+                        <label for="new-taskAssignedTo">Assigned To</label>
+                        <input type="email" class="form-control" id="new-taskAssignedToEmail">
+                      </div>
 
-                        <div class="form-group col">
-                            <label for="new-taskDueDate">Due Date</label>
-                            <input type="date" class="form-control" id="new-taskDueDate">
-                        </div>
+                      <div class="form-group col">
+                        <label for="new-taskDueDate">Due Date</label>
+                        <input type="date" class="form-control" id="new-taskDueDate">
+                      </div>
                     </div>
                     <button type="submit" class="btn btn-warning btn-block">Add Task</button>
-                </form>
+                  </form>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-        <!-- modal ends here -->
+      <!-- modal ends here -->
 
-     
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-            <script>
-              const tooltips = document.querySelectorAll('.tt')
-              tooltips.forEach(t => {
-                new bootstrap.Tooltip(t)
-              })
-            </script>
+      <!-- JavaScript -->
+      <script src="../Team B/js/taskManager.js"></script>
+      <script src="../Team B/js/index.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+      <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+          new bootstrap.Tooltip(t)
+        })
+      </script>
 </body>
+
 </html>
